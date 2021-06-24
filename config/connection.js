@@ -21,7 +21,7 @@ const options = {
     useUnifiedTopology: true
   }
 
-mongoose.connect(url, options).then(() => {
+mongoose.connect('mongodb+srv://ilcloth:5CNJWbNIfXtvcErk@cluster0.fbovt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', options).then(() => {
     console.log('DB Connected')
 }).catch(err => {
     console.log(err)
