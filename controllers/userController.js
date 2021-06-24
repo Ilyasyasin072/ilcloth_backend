@@ -107,6 +107,15 @@ const index = async (req, res) => {
     }
 }
 
+const getAll = async (req, res) => {
+    const user = await User.find({})
+
+    res.json({
+         user
+    })
+}
+
 module.exports = {
-    index
+    index,
+    getAll
 }

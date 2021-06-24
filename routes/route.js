@@ -27,6 +27,8 @@ router.group('/v1', (router) => {
 
         router.get('/', userController.index)
 
+        router.get('/all', userController.getAll)
+
         router.group('/address', (router) => {
             router.get('/', userAddressController.index)
             router.post('/create-address', userAddressController.store)
