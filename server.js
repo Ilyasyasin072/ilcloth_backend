@@ -12,7 +12,7 @@ const router = require('./routes/route');
 
 // app.use(cors())
 
-app.set('port', (3000));
+app.set('port', (process.env.PORT || 3000));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use((req, res, next) => {
@@ -43,6 +43,6 @@ app.get('/', (req, res, next) => {
     })
 })
 
-app.listen(app.get('port'), () => {
+app.listen(process.env.PORT, () => {
     console.log(`Find the server at: http://localhost:${app.get('port')}/`);
   });
