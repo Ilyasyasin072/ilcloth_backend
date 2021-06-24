@@ -35,7 +35,7 @@ app.use(function(req, res, next) {
     }
   });
 
-app.use('/api', cors(), router);
+// app.use('/api', cors(), router);
 
 app.get('/', (req, res, next) => {
     res.json({
