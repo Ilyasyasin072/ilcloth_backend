@@ -5,7 +5,6 @@ const { Schema, model } = mongoose;
 require('dotenv').config({ path: 'DB_DATABASE' })
 
 const url = process.env.DB_DATABASE
-console.log(url)
 
 const options = {
     
