@@ -12,7 +12,7 @@ const router = require('./routes/route');
 
 // app.use(cors())
 
-app.set('port', (process.env.NODE_PORT || 3000));
+app.set('port', (3000));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use((req, res, next) => {
